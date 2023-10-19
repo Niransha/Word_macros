@@ -1,0 +1,15 @@
+Sub images_AAA()
+'
+' images_AAA Macro
+'
+'
+Dim i As Long
+    With ActiveDocument
+        For i = 1 To .InlineShapes.Count
+            With .InlineShapes(i)
+                .ScaleHeight = 30
+                .ScaleWidth = 30
+            End With
+        Next i
+    End With
+End Sub
